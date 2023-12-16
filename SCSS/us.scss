@@ -1,0 +1,117 @@
+.us{
+  background: url("../Assets/img/background_initial.png") center/cover;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__text{
+    background-color: #ff3131;
+    border-radius: 20px;
+    padding: 20px;
+
+    p{
+      margin-top: 10px;
+      margin-right: 25px;
+      margin-left: 25px;
+      font-size: 40px;
+      color: white;
+      font-weight: 700;
+    }
+  }
+}
+
+.section__who{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 29px;
+
+  h1{
+    font-size: 40px;
+    font-family: "Mplus 1p Bold", serif;
+  }
+
+  &__body{
+    width: 80%;
+
+    p{
+      font-size: 18px;
+    }
+
+    img{
+      width: 50%;
+    }
+  }
+}
+
+.section__purpose{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 29px;
+  margin-bottom: 50px;
+
+  h1{
+    font-size: 40px;
+    font-family: "Mplus 1p Bold", serif;
+  }
+
+  &__body{
+    margin-top: 35px;
+    width: 100%;
+    display: flex;
+
+    @media screen and (max-width: 1150px){
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__mission{
+      margin-right: 120px;
+      margin-left: 120px;
+      background-color: #ffc700;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @media screen and (max-width: 1150px){
+        margin-bottom: 50px;
+        width: 90%;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      p{
+        width: 90%;
+        margin-top: 26px;
+        font-size: 24px;
+        font-family: "Mplus 1p Bold", serif;
+        margin-bottom: 50px;
+      }
+
+      &__head{
+        margin-right: 15px;
+        background-color: #ff0000;
+        border-bottom-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+        padding: 15px 80px 20px;
+        display: flex;
+        justify-content: center;
+
+        h2{
+          color: white;
+          font-family: "Mplus 1p Bold", serif;
+          font-size: 36px;
+        }
+      }
+    }
+  }
+}
+
+.line{
+  border: 1px solid;
+  color: dimgray;
+}

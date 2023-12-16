@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jesús Reparador</title>
+    <link rel="icon" href="../Assets/img/insignia.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/index.css">
+    <title>Bootstrap Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Enlace al archivo CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Enlace al archivo JS de Bootstrap (jQuery debe estar incluido antes) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand navbar__logo" href="#"><img src="../Assets/img/logo_jesúsreparador_pagina.png" width=220vh height=50vh></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar__items">
+                <li class="nav-item">
+                    <a class="nav-link navbar__items__link" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar__items__link" href="us.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar__items__link" href="workshops.html">Talleres</a>
+                </li>
+                <li class="nav-item">
+                    <div class="navbar__items__contact">
+                        <a class="nav-link navbar__items__contact__link" href="contact.html">Contáctanos</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<br><br><br>
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-indicators">
+        <i type="button" class="carousel__icon__circle bi bi-circle active" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></i>
+        <i type="button" class="carousel__icon__circle bi bi-circle" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></i>
+        <i type="button" class="carousel__icon__circle bi bi-circle" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></i>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="carousel__options initialImage">
+                <div class="carousel__options__paragraph">
+                    <p>INICIAL</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="carousel__options primaryImage">
+                <div class="carousel__options__paragraph">
+                    <p>PRIMARIA</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="carousel__options secondaryImage">
+                <div class="carousel__options__paragraph">
+                    <p>SECUNDARIA</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<section class="container section__infrastructure">
+    <div class="section__infrastructure__header text-center">
+        <p class="section__infrastructure__header__title">Somos el colegio “Jesús Reparador”</p>
+        <p class="section__infrastructure__header__subtitle">Formamos los jóvenes del futuro</p>
+    </div>
+    <div class="section__infrastructure__body row justify-content-center">
+        <div class="col-md-3">
+            <div class="section__infrastructure__body__item text-center">
+                <img src="../Assets/img/icon_teacher.png" class="img-fluid" alt="Docentes Capacitados"/>
+                <p>Docentes Capacitados</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="section__infrastructure__body__item text-center">
+                <img src="../Assets/img/icon_computer.png" class="img-fluid" alt="Sala de computo"/>
+                <p>Sala de computo</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="section__infrastructure__body__item text-center">
+                <img src="../Assets/img/icon_laboratory.png" class="img-fluid" alt="Laboratorio"/>
+                <p>Laboratorio</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="section__infrastructure__body__item text-center">
+                <img src="../Assets/img/icon_yard.png" class="img-fluid" alt="Patio recreativo"/>
+                <p>Patio recreativo</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="section__infrastructure__body__item text-center">
+                <img src="../Assets/img/icon_room.png" class="img-fluid" alt="Patio recreativo"/>
+                <p>Salones ambientados</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="section__infrastructure__body__item text-center">
+                <img src="../Assets/img/icon_board.png" class="img-fluid" alt="Patio recreativo"/>
+                <p>Pizarra Iteractiva</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="section__infrastructure__body__item text-center">
+                <img src="../Assets/img/icon_book.png" class="img-fluid" alt="Patio recreativo"/>
+                <p>Libros educativos</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section__events">
+    <div class="section__events__header text-center">
+        <p class="section__events__header__title">Eventos Educativos</p>
+    </div>
+
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner section__events__carousel">
+            <div class="carousel-item active">
+                <div class="section__events__carousel__options">
+                    <div>
+                        <img class="section__events__carousel__options__image1" src="../Assets/img/dia_logro_1.png">
+                        <img class="section__events__carousel__options__image2" src="../Assets/img/dia_logro_1.png">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="section__events__carousel__options">
+                    <div>
+                        <img class="section__events__carousel__options__image1" src="../Assets/img/dia_logro_1.png">
+                        <img class="section__events__carousel__options__image2" src="../Assets/img/dia_logro_1.png">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="section__events__carousel__options">
+                    <div>
+                        <img class="section__events__carousel__options__image1" src="../Assets/img/dia_logro_1.png">
+                        <img class="section__events__carousel__options__image2" src="../Assets/img/dia_logro_1.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="section__events__button bi bi-caret-left-fill" viewBox="0 0 16 16">
+                <g>
+                    <circle cx="8" cy="8" r="8" fill="red" />
+                    <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+                </g>
+            </svg>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="section__events__button bi bi-caret-left-fill" viewBox="0 0 16 16">
+                <g>
+                    <circle cx="8" cy="8" r="8" fill="red" />
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                </g>
+            </svg>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<section class="section__levels">
+    <div class="section__events__header text-center">
+        <p class="section__events__header__title">Niveles</p>
+    </div>
+
+    <div class="section__levels__body row justify-content-center">
+        <div class="section__levels__body__item col-xl-3 mb-3">
+            <div class="section__levels__body__item__title text-center">
+                <p>INICIAL</p>
+            </div>
+            <div class="section__levels__body__item__description">
+                <ul>
+                    <li>Educación de Calidad: Cultivamos el amor por el aprendizaje desde temprana edad.</li>
+                    <li>Docentes Especializados: Nuestro equipo está dedicado a la enseñanza temprana.</li>
+                    <li>Entorno Estimulante: Creamos un ambiente seguro y estimulante para el desarrollo integral.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="section__levels__body__item col-xl-3 mb-3">
+            <div class="section__levels__body__item__title text-center">
+                <p>PRIMARIA</p>
+            </div>
+            <div class="section__levels__body__item__description">
+                <ul>
+                    <li>Currículo Integral: Desarrollamos el pensamiento crítico y la resolución de problemas.</li>
+                    <li>Profesorado Comprometido: Educadores guían a los estudiantes en un ambiente positivo.</li>
+                    <li>Enfoque Personalizado: Atendemos las necesidades individuales para un desarrollo equilibrado.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="section__levels__body__item col-xl-3 mb-3">
+            <div class="section__levels__body__item__title text-center">
+                <p>SECUNDARIA</p>
+            </div>
+            <div class="section__levels__body__item__description">
+                <ul>
+                    <li>Preparación para el Futuro: Nos centramos en preparar a los estudiantes para desafíos futuros.</li>
+                    <li>Docentes Especializados: Nuestro equipo está dedicado a la enseñanza temprana.</li>
+                    <li>Entorno Estimulante: Creamos un ambiente seguro y estimulante para el desarrollo integral.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section__levels__workshops">
+        <p>¡Explora emocionantes talleres para todos los niveles en nuestro colegio, donde cada estudiante puede descubrir y desarrollar sus habilidades únicas!</p>
+        <button>Talleres</button>
+    </div>
+</section>
+
+<section class="section__contact schoolImage">
+    <p>CONTÁCTANOS</p>
+    <div>
+        <p>Dirigese al enlace de “Contactenos” en la parte superior de la página o presione el siguiente botón para más información:</p>
+        <button>Contáctanos</button>
+        <p>¡Te esperamos!</p>
+    </div>
+</section>
+
+<footer>
+    <div class="footer__body">
+        <div class="footer__body__contact">
+            <p>Información de contácto:</p>
+            <div class="footer__body__contact__item">
+                <img class="img-fluid" src="../Assets/img/icon_email.png">
+                <p>jesusreparador2004@gmail.com</p>
+            </div>
+            <div class="footer__body__contact__item">
+                <img class="img-fluid" src="../Assets/img/icon_cellphone.png">
+                <p>999 999 999</p>
+            </div>
+            <div class="footer__body__contact__item">
+                <img class="img-fluid" src="../Assets/img/icon_location.png">
+                <p>El Pinar, Comas</p>
+            </div>
+        </div>
+
+        <div class="footer__body__navigation">
+            <p>Navegación:</p>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="us.html">Nosotros</a></li>
+                <li><a href="workshops.html">Talleres</a></li>
+                <li><a href="contact.html">Contáctanos</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__body__social">
+            <p>Redes Sociales:</p>
+            <a href="https://www.facebook.com/profile.php?id=100046664115676"><img src="../Assets/img/icon_facebook.png"></a>
+            <a><img src="../Assets/img/icon_whatsApp.png"></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

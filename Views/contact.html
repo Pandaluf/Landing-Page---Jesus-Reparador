@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jesús Reparador</title>
+    <link rel="icon" href="../Assets/img/insignia.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/index.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/contact.css">
+    <title>Bootstrap Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Enlace al archivo CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Enlace al archivo JS de Bootstrap (jQuery debe estar incluido antes) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("S6LTA0NioyMV02int");
+        })();
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand navbar__logo" href="#"><img src="../Assets/img/logo_jesúsreparador_pagina.png" width=220vh height=50vh></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar__items">
+                <li class="nav-item">
+                    <a class="nav-link navbar__items__link" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar__items__link" href="us.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar__items__link" href="workshops.html">Talleres</a>
+                </li>
+                <li class="nav-item">
+                    <div class="navbar__items__contact">
+                        <a class="nav-link navbar__items__contact__link" href="#">Contáctanos</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<br><br><br>
+
+<div class="contact">
+    <div class="contact__text">
+        <p>CONTACTO</p>
+    </div>
+</div>
+
+<section class="section__data">
+    <h1>Datos de contacto</h1>
+    <div class="section__data__body">
+        <div class="section__data__body__item">
+            <p>Correo: <span>jessdasddsadsd@dsadd</span></p>
+            <p>WhatsApp: <span>+51 941 300 034</span></p>
+            <p>Dirección: <span>MZ. D2 Lote 15 Urb. El Pinar, Comas</span></p>
+            <p>Facebook: <a href="https://www.facebook.com/profile.php?id=100046664115676">Click Aqui</a></p>
+        </div>
+        <div class="section__data__body__item">
+            <p>Horario de atención virtual (WhatsApp y Facebook): </p>
+            <ul>
+                <li>Lunes a Domingo de 9:00 AM - 8:00 PM</li>
+            </ul>
+            <p>Horario de atención presencial</p>
+            <ul>
+                <li>Lunes a Sabado de 9:00 AM - 3:00 PM</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="section__form">
+    <form class="section__form__body">
+        <h1 class="text-center">Déjanos un Mensaje</h1>
+        <div class="section__form__body__inner">
+            <p>Le invitamos a completar nuestro formulario de contacto para ponernos en comunicación con usted.</p>
+            <div class="mb-3 section__form__body__inner__item">
+                <label for="formName" class="form-label">Nombres y Apellidos:</label>
+                <input type="text" class="form-control" id="formName" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3 section__form__body__inner__item">
+                <label for="formCellphone" class="form-label">Celular:</label>
+                <input type="tel" class="form-control" id="formCellphone">
+            </div>
+            <div class="mb-3 section__form__body__inner__item">
+                <label for="formEmail" class="form-label">Correo electrónico:</label>
+                <input type="email" class="form-control" id="formEmail">
+            </div>
+            <div class="mb-3 section__form__body__inner__item">
+                <label class="form-label">Grado del estudiante:</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected></option>
+                    <option value="1">Inicial</option>
+                    <option value="2">Primaria</option>
+                    <option value="3">Secundaria</option>
+                </select>
+            </div>
+            <div class="mb-3 section__form__body__inner__item">
+                <label for="formConsultation" class="form-label">Consulta:</label>
+                <textarea class="form-control" id="formConsultation" rows="3"></textarea>
+            </div>
+            <p>Nota: Si tiene más de un niño para la matrícula, puede comunicarlo a travéz del apartado de Consulta</p>
+
+            <div class="section__form__body__inner__submit">
+                <button type="submit" class="btn btn-primary">ENVIAR</button>
+            </div>
+        </div>
+    </form>
+</section>
+
+<footer>
+    <div class="footer__body">
+        <div class="footer__body__contact">
+            <p>Información de contácto:</p>
+            <div class="footer__body__contact__item">
+                <img class="img-fluid" src="../Assets/img/icon_email.png">
+                <p>jesusreparador2004@gmail.com</p>
+            </div>
+            <div class="footer__body__contact__item">
+                <img class="img-fluid" src="../Assets/img/icon_cellphone.png">
+                <p>999 999 999</p>
+            </div>
+            <div class="footer__body__contact__item">
+                <img class="img-fluid" src="../Assets/img/icon_location.png">
+                <p>El Pinar, Comas</p>
+            </div>
+        </div>
+
+        <div class="footer__body__navigation">
+            <p>Navegación:</p>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="us.html">Nosotros</a></li>
+                <li><a href="workshops.html">Talleres</a></li>
+                <li><a href="contact.html">Contáctanos</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__body__social">
+            <p>Redes Sociales:</p>
+            <a href="https://www.facebook.com/profile.php?id=100046664115676"><img src="../Assets/img/icon_facebook.png"></a>
+            <a><img src="../Assets/img/icon_whatsApp.png"></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

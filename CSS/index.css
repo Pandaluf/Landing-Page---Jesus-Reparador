@@ -1,0 +1,361 @@
+@charset "UTF-8";
+.navbar__logo {
+  margin-left: 2px;
+}
+
+.navbar__items__link, .navbar__items__contact__link {
+  color: white;
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+.navbar__items__contact {
+  background-color: #FF0000;
+  border-radius: 10px;
+  margin-right: 30px;
+}
+.navbar__items__contact__link {
+  margin-right: 10px;
+  margin-left: 8px;
+}
+
+.carousel__icon__circle {
+  width: 29.85px !important;
+  height: 30.66px !important;
+  border-radius: 50%;
+  margin-right: 24px !important;
+}
+.carousel__icon__circle.active {
+  background-color: black !important;
+}
+
+.carousel__options {
+  height: 484px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel__options__paragraph {
+  background-color: #fabf27;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 30px;
+  border: 2px solid black;
+}
+.carousel__options__paragraph p {
+  font-family: Kanit, serif;
+  font-size: 64px;
+  font-weight: 900;
+  color: white;
+  -webkit-text-stroke: 4.5px black;
+  margin-top: 10px;
+}
+.carousel__options.initialImage {
+  background: url("../Assets/img/inicial_inicio.png") center/cover;
+}
+.carousel__options.primaryImage {
+  background: url("../Assets/img/insignia.png") center/cover;
+}
+.carousel__options.secondaryImage {
+  background: url("../Assets/img/logo_jesúsreparador_pagina.png") center/cover;
+}
+
+.section__infrastructure {
+  margin-top: 29px;
+}
+.section__infrastructure__header {
+  font-family: "Mplus 1p Bold", serif;
+}
+.section__infrastructure__header__title {
+  font-size: 40px;
+  margin-bottom: 0;
+}
+.section__infrastructure__header__subtitle {
+  font-size: 32px;
+  margin-top: 0;
+}
+.section__infrastructure__body {
+  margin-top: 48px;
+}
+.section__infrastructure__body__item {
+  margin-bottom: 62px;
+}
+.section__infrastructure__body__item img {
+  max-width: 115px;
+  height: 120px;
+}
+.section__infrastructure__body__item p {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 3px;
+}
+
+.section__events {
+  background-color: #ffe500;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.section__events__header {
+  margin-top: 20px;
+}
+.section__events__header__title {
+  font-family: "Mplus 1p Bold", serif;
+  font-size: 40px;
+}
+.section__events__carousel__options {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 46px;
+}
+@media screen and (max-width: 1200px) {
+  .section__events__carousel__options {
+    width: 100%;
+  }
+  .section__events__carousel__options div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .section__events__carousel__options__image1 {
+    width: 90% !important;
+    margin-right: 0 !important;
+    margin-bottom: 50px;
+  }
+  .section__events__carousel__options__image2 {
+    width: 50% !important;
+  }
+}
+.section__events__carousel__options__image1 {
+  width: 665px;
+  height: 472px;
+  border: 1px black solid;
+  margin-right: 26px;
+  object-fit: cover;
+}
+.section__events__carousel__options__image2 {
+  width: 331px;
+  height: 472px;
+  border: 1px black solid;
+  object-fit: cover;
+}
+.section__events__button {
+  font-size: 76.37px;
+  color: white;
+}
+
+.section__levels__body {
+  display: flex;
+  width: 100%;
+  margin-bottom: 31px;
+}
+.section__levels__body__item {
+  margin-right: 38px;
+  margin-left: 38px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section__levels__body__item__title {
+  background-color: #ff1414;
+  border-radius: 21px;
+  margin-bottom: 0;
+}
+.section__levels__body__item__title p {
+  font-size: 30px;
+  font-family: "Mplus 1p Bold", serif;
+  color: white;
+  margin-left: 85px;
+  margin-right: 85px;
+  margin-top: 20px;
+}
+.section__levels__body__item__description {
+  background-color: #ff6814;
+  margin-top: 15px;
+  border-radius: 21px;
+  font-size: 24px;
+  width: 381px;
+}
+.section__levels__body__item__description ul li {
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  color: white;
+  font-family: "Mplus 1p Bold", serif;
+  font-size: 24px;
+}
+.section__levels__workshops {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 44px;
+}
+.section__levels__workshops p {
+  font-size: 24px;
+  font-family: Inter, serif;
+}
+.section__levels__workshops button {
+  background-color: #fff069;
+  font-size: 36px;
+  font-family: "Mplus 1p Bold", serif;
+  width: 249px;
+  height: 52px;
+}
+
+.section__contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 558px;
+}
+.section__contact p {
+  font-size: 41px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 4px;
+}
+.section__contact div {
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section__contact div p {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 500;
+  color: white;
+}
+.section__contact div button {
+  background-color: #ff3030;
+  font-size: 29px;
+  font-weight: 500;
+  color: white;
+  margin-top: 16px;
+  margin-bottom: 32px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 8px;
+  border: black 1px solid;
+}
+.section__contact.schoolImage {
+  background: url("../Assets/img/school_contact.png") center/cover;
+}
+
+.footer__body {
+  width: 100%;
+  margin-left: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1150px) {
+  .footer__body {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer__body__contact p {
+    font-size: 15px !important;
+  }
+}
+.footer__body__contact {
+  margin-top: 18px;
+}
+.footer__body__contact p {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+.footer__body__contact__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.footer__body__contact__item img {
+  width: 42px;
+  height: 42px;
+}
+.footer__body__contact__item p {
+  font-size: 20px;
+  color: white;
+  margin-left: 18px;
+}
+.footer__body__navigation {
+  margin-top: 18px;
+}
+.footer__body__navigation p {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+.footer__body__navigation ul {
+  color: white;
+}
+.footer__body__navigation ul li a {
+  color: white;
+  font-size: 20px;
+}
+.footer__body__social {
+  margin-top: 18px;
+  margin-bottom: 100px;
+  margin-right: 15px;
+}
+.footer__body__social p {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+.footer__body__social img {
+  width: 105px;
+  margin-right: 15px;
+}
+
+.navbar-toggler {
+  border-color: white;
+  border-width: 3px;
+}
+.navbar-toggler i {
+  color: white;
+  font-size: 30px;
+}
+
+.carousel-item.active {
+  background: none;
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  background-color: #0a40ff;
+  font-family: Kadwa-Regular, serif;
+  font-weight: 100;
+}
+
+footer {
+  background-color: #0038ff;
+  display: flex !important;
+  justify-content: space-evenly;
+}
+
+@font-face {
+  font-family: "Kadwa-Regular";
+  src: url("../Assets/fonts/Kadwa-Regular.ttf");
+}
+@font-face {
+  font-family: "Kanit";
+  src: url("../Assets/fonts/Kanit-Black.ttf");
+}
+@font-face {
+  font-family: "Mplus 1p Bold";
+  src: url("../Assets/fonts/MPLUS1p-Bold.ttf");
+}
+
+/*# sourceMappingURL=index.css.map */
