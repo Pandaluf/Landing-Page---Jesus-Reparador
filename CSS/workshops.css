@@ -1,6 +1,6 @@
 .workshops {
-  background: url("../Assets/img/background_initial.png") center/cover;
-  height: 484px;
+  background: url("../Assets/img/section.png") center/cover;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
