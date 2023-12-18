@@ -207,8 +207,8 @@
   background-color: #fff069;
   font-size: 36px;
   font-family: "Mplus 1p Bold", serif;
-  width: 249px;
-  height: 52px;
+  padding-right: 60px;
+  padding-left: 60px;
 }
 
 .section__contact {
@@ -248,6 +248,11 @@
   padding-left: 10px;
   border-radius: 8px;
   border: black 1px solid;
+  transition: all 0.3s;
+}
+.section__contact div button:hover {
+  box-shadow: 0 8px 16px rgb(203, 209, 0);
+  transform: translateY(-4px);
 }
 .section__contact.schoolImage {
   background: url("../Assets/img/school_contact.png") center/cover;

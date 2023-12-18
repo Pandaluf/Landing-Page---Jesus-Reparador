@@ -236,10 +236,8 @@
       background-color: #fff069;
       font-size: 36px;
       font-family: "Mplus 1p Bold", serif;
-      //padding-right: 60px;
-      //padding-left: 60px;
-      width: 249px;
-      height: 52px;
+      padding-right: 60px;
+      padding-left: 60px;
     }
   }
 }
@@ -283,6 +281,13 @@
       padding-left: 10px;
       border-radius: 8px;
       border: black 1px solid;
+      transition: all 0.3s;
+    }
+
+    button:hover{
+      box-shadow: 0 8px 16px rgba(203, 209, 0, 1);
+      //rgba(247, 255, 0, 1)
+      transform: translateY(-4px);
     }
   }
   &.schoolImage{

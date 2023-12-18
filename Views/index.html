@@ -258,10 +258,19 @@
     <p>CONTÁCTANOS</p>
     <div>
         <p>Dirigese al enlace de “Contactenos” en la parte superior de la página o presione el siguiente botón para más información:</p>
-        <button>Contáctanos</button>
+        <button id="contactButton">Contáctanos</button>
         <p>¡Te esperamos!</p>
     </div>
 </section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let contactButton = document.getElementById("contactButton");
+        contactButton.addEventListener("click", function () {
+            window.location.href = "contact.html";
+        });
+    });
+</script>
 
 <footer>
     <div class="footer__body">
