@@ -21,6 +21,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
+    <script src="../JavaScripts/contact.js"></script>
     <script type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
@@ -29,6 +30,17 @@
             emailjs.init("S6LTA0NioyMV02int");
         })();
     </script>
+
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <script defer src="../JavaScripts/animation_image.js"></script>
+    <script defer src="../JavaScripts/animation_title.js"></script>
+    <script defer src="../JavaScripts/animation_standingOut.js"></script>
+    <script defer src="../JavaScripts/animation_bigDiv.js"></script>
+    <script defer src="../JavaScripts/animation_text_especial.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg fixed-top">
@@ -66,15 +78,15 @@
 </div>
 
 <section class="section__data">
-    <h1>Datos de contacto</h1>
+    <h1 class="animationTitle">Datos de contacto</h1>
     <div class="section__data__body">
-        <div class="section__data__body__item">
+        <div class="section__data__body__item animationBigDiv">
             <p>Correo: <span>jessdasddsadsd@dsadd</span></p>
             <p>WhatsApp: <span>+51 941 300 034</span></p>
             <p>Dirección: <span>MZ. D2 Lote 15 Urb. El Pinar, Comas</span></p>
             <p>Facebook: <a href="https://www.facebook.com/profile.php?id=100046664115676">Click Aqui</a></p>
         </div>
-        <div class="section__data__body__item">
+        <div class="section__data__body__item animationBigDiv">
             <p>Horario de atención virtual (WhatsApp y Facebook): </p>
             <ul>
                 <li>Lunes a Domingo de 9:00 AM - 8:00 PM</li>
@@ -88,7 +100,7 @@
 </section>
 
 <section class="section__form">
-    <form class="section__form__body">
+    <div class="section__form__body">
         <h1 class="text-center">Déjanos un Mensaje</h1>
         <div class="section__form__body__inner">
             <p>Le invitamos a completar nuestro formulario de contacto para ponernos en comunicación con usted.</p>
@@ -108,9 +120,9 @@
                 <label class="form-label">Grado del estudiante:</label>
                 <select class="form-select" aria-label="Default select example">
                     <option selected></option>
-                    <option value="1">Inicial</option>
-                    <option value="2">Primaria</option>
-                    <option value="3">Secundaria</option>
+                    <option value="Inicial">Inicial</option>
+                    <option value="Primaria">Primaria</option>
+                    <option value="Secundaria">Secundaria</option>
                 </select>
             </div>
             <div class="mb-3 section__form__body__inner__item">
@@ -120,10 +132,32 @@
             <p>Nota: Si tiene más de un niño para la matrícula, puede comunicarlo a travéz del apartado de Consulta</p>
 
             <div class="section__form__body__inner__submit">
-                <button type="submit" class="btn btn-primary">ENVIAR</button>
+                <button id="openModalButton" class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" onclick="sendMail()">ENVIAR</button>
             </div>
         </div>
-    </form>
+    </div>
+
+<!--    onclick="sendMail()"-->
+
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header section__form__dialog__header">
+                    <div>
+                        <img src="../Assets/img/icon_cheque.png" alt=""/>
+                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Formulario Enviado</h1>
+                    </div>
+                </div>
+                <div class="modal-body section__form__dialog__body">
+                    <p>¡GRACIAS POR ELEGIRNOS!</p>
+                </div>
+                <div class="modal-footer section__form__dialog__button">
+                    <button data-bs-dismiss="modal">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </section>
 
 <footer>

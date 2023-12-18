@@ -19,6 +19,14 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script defer src="../JavaScripts/animation_image.js"></script>
+    <script defer src="../JavaScripts/animation_title.js"></script>
+    <script defer src="../JavaScripts/animation_standingOut.js"></script>
+    <script defer src="../JavaScripts/animation_bigDiv.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg fixed-top">
@@ -89,49 +97,49 @@
 </div>
 
 <section class="container section__infrastructure">
-    <div class="section__infrastructure__header text-center">
+    <div class="section__infrastructure__header text-center animationTitle">
         <p class="section__infrastructure__header__title">Somos el colegio “Jesús Reparador”</p>
         <p class="section__infrastructure__header__subtitle">Formamos los jóvenes del futuro</p>
     </div>
-    <div class="section__infrastructure__body row justify-content-center">
+    <div class="section__infrastructure__body row justify-content-center hidden">
         <div class="col-md-3">
-            <div class="section__infrastructure__body__item text-center">
+            <div class="section__infrastructure__body__item text-center animationImage">
                 <img src="../Assets/img/icon_teacher.png" class="img-fluid" alt="Docentes Capacitados"/>
                 <p>Docentes Capacitados</p>
             </div>
         </div>
         <div class="col-md-3">
-            <div class="section__infrastructure__body__item text-center">
+            <div class="section__infrastructure__body__item text-center animationImage">
                 <img src="../Assets/img/icon_computer.png" class="img-fluid" alt="Sala de computo"/>
                 <p>Sala de computo</p>
             </div>
         </div>
         <div class="col-md-3">
-            <div class="section__infrastructure__body__item text-center">
+            <div class="section__infrastructure__body__item text-center animationImage">
                 <img src="../Assets/img/icon_laboratory.png" class="img-fluid" alt="Laboratorio"/>
                 <p>Laboratorio</p>
             </div>
         </div>
         <div class="col-md-3">
-            <div class="section__infrastructure__body__item text-center">
+            <div class="section__infrastructure__body__item text-center animationImage">
                 <img src="../Assets/img/icon_yard.png" class="img-fluid" alt="Patio recreativo"/>
                 <p>Patio recreativo</p>
             </div>
         </div>
         <div class="col-md-3">
-            <div class="section__infrastructure__body__item text-center">
+            <div class="section__infrastructure__body__item text-center animationImage">
                 <img src="../Assets/img/icon_room.png" class="img-fluid" alt="Patio recreativo"/>
                 <p>Salones ambientados</p>
             </div>
         </div>
         <div class="col-md-3">
-            <div class="section__infrastructure__body__item text-center">
+            <div class="section__infrastructure__body__item text-center animationImage">
                 <img src="../Assets/img/icon_board.png" class="img-fluid" alt="Patio recreativo"/>
                 <p>Pizarra Iteractiva</p>
             </div>
         </div>
         <div class="col-md-3">
-            <div class="section__infrastructure__body__item text-center">
+            <div class="section__infrastructure__body__item text-center animationImage">
                 <img src="../Assets/img/icon_book.png" class="img-fluid" alt="Patio recreativo"/>
                 <p>Libros educativos</p>
             </div>
@@ -140,7 +148,7 @@
 </section>
 
 <section class="section__events">
-    <div class="section__events__header text-center">
+    <div class="section__events__header text-center animationTitle">
         <p class="section__events__header__title">Eventos Educativos</p>
     </div>
 
@@ -193,12 +201,12 @@
 </section>
 
 <section class="section__levels">
-    <div class="section__events__header text-center">
+    <div class="section__events__header text-center animationTitle">
         <p class="section__events__header__title">Niveles</p>
     </div>
 
     <div class="section__levels__body row justify-content-center">
-        <div class="section__levels__body__item col-xl-3 mb-3">
+        <div class="section__levels__body__item col-xl-3 mb-3 animationBigDiv">
             <div class="section__levels__body__item__title text-center">
                 <p>INICIAL</p>
             </div>
@@ -210,8 +218,8 @@
                 </ul>
             </div>
         </div>
-        <div class="section__levels__body__item col-xl-3 mb-3">
-            <div class="section__levels__body__item__title text-center">
+        <div class="section__levels__body__item col-xl-3 mb-3 animationBigDiv">
+            <div class="section__levels__body__item__title text-center ">
                 <p>PRIMARIA</p>
             </div>
             <div class="section__levels__body__item__description">
@@ -222,7 +230,7 @@
                 </ul>
             </div>
         </div>
-        <div class="section__levels__body__item col-xl-3 mb-3">
+        <div class="section__levels__body__item col-xl-3 mb-3 animationBigDiv">
             <div class="section__levels__body__item__title text-center">
                 <p>SECUNDARIA</p>
             </div>
@@ -238,7 +246,7 @@
 
     <div class="section__levels__workshops">
         <p>¡Explora emocionantes talleres para todos los niveles en nuestro colegio, donde cada estudiante puede descubrir y desarrollar sus habilidades únicas!</p>
-        <button>Talleres</button>
+        <button class="animationStandingOut">Talleres</button>
     </div>
 </section>
 

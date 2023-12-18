@@ -178,4 +178,45 @@
       }
     }
   }
+
+  &__dialog{
+    &__header{
+      div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img{
+          width: 30%;
+          margin-top: 10px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    &__body{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__button{
+      width: 100%;
+      display: flex;
+      justify-content: center !important;
+      align-items: center;
+
+      button{
+        background-color: #00b430;
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 10px;
+        font-size: 25px;
+        font-weight: 500;
+      }
+    }
+  }
 }

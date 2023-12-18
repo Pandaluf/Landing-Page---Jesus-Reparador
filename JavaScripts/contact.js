@@ -13,12 +13,13 @@ function sendMail(){
     emailjs
         .send(serviceID, templateID, params)
         .then(
-            res => {
+            (res) => {
                 document.getElementById("formName").value = "";
+                document.getElementById("formCellphone").value = "";
                 document.getElementById("formEmail").value = "";
+                document.querySelector(".form-select").value = "";
                 document.getElementById("formConsultation").value = "";
 
                 console.log(res);
-                alert("tu email se envio");
             }).catch((error) => console.log(error));
 }

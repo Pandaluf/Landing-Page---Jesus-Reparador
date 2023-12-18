@@ -159,5 +159,37 @@
   padding-left: 40px;
   border: 0;
 }
+.section__form__dialog__header div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section__form__dialog__header div img {
+  width: 30%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.section__form__dialog__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section__form__dialog__button {
+  width: 100%;
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+}
+.section__form__dialog__button button {
+  background-color: #00b430;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: 500;
+}
 
 /*# sourceMappingURL=contact.css.map */
