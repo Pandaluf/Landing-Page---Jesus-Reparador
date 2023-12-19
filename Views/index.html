@@ -250,7 +250,7 @@
 
     <div class="section__levels__workshops">
         <p>¡Explora emocionantes talleres para todos los niveles en nuestro colegio, donde cada estudiante puede descubrir y desarrollar sus habilidades únicas!</p>
-        <button class="animationStandingOut">Talleres</button>
+        <button class="animationStandingOut" id="workshopsButton">Talleres</button>
     </div>
 </section>
 
@@ -268,6 +268,13 @@
         let contactButton = document.getElementById("contactButton");
         contactButton.addEventListener("click", function () {
             window.location.href = "contact.html";
+        });
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        let contactButton = document.getElementById("workshopsButton");
+        contactButton.addEventListener("click", function () {
+            window.location.href = "workshops.html";
         });
     });
 </script>

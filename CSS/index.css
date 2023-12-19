@@ -212,8 +212,7 @@
   transition: all 0.5s;
 }
 .section__levels__workshops button:hover {
-  background-color: #ffce34;
-  padding: 20px;
+  font-size: 40px;
 }
 
 .section__contact {
