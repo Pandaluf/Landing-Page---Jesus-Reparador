@@ -238,6 +238,12 @@
       font-family: "Mplus 1p Bold", serif;
       padding-right: 60px;
       padding-left: 60px;
+      transition: all 0.5s;
+
+      &:hover{
+        background-color: #ffce34;
+        padding: 20px;
+      }
     }
   }
 }

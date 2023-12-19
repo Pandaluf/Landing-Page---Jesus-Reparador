@@ -112,29 +112,41 @@
   display: flex;
   justify-content: end;
 }
-.section__form__body__inner__item input, .section__form__body__inner__item select {
+.section__form__body__inner__item div {
+  display: flex;
+}
+@media screen and (max-width: 1200px) {
+  .section__form__body__inner__item div {
+    width: 100%;
+  }
+}
+.section__form__body__inner__item div input, .section__form__body__inner__item div select {
   width: 489px;
   height: 58px;
   margin-left: 12px;
 }
 @media screen and (max-width: 1200px) {
-  .section__form__body__inner__item input, .section__form__body__inner__item select {
-    width: 90%;
+  .section__form__body__inner__item div input, .section__form__body__inner__item div select {
+    width: 100%;
+  }
+}
+.section__form__body__inner__item div h4 {
+  color: red;
+  margin-left: 5px;
+}
+.section__form__body__inner__item div textarea {
+  width: 489px;
+  margin-left: 12px;
+}
+@media screen and (max-width: 1200px) {
+  .section__form__body__inner__item div textarea {
+    width: 100%;
   }
 }
 .section__form__body__inner__item label {
   margin-top: 10px;
   font-size: 24px;
   font-family: "Mplus 1p Bold", serif;
-}
-.section__form__body__inner__item textarea {
-  width: 489px;
-  margin-left: 12px;
-}
-@media screen and (max-width: 1200px) {
-  .section__form__body__inner__item textarea {
-    width: 90%;
-  }
 }
 @media screen and (max-width: 1200px) {
   .section__form__body__inner__item {
@@ -158,6 +170,12 @@
   padding-right: 40px;
   padding-left: 40px;
   border: 0;
+  transition: all 0.1s;
+}
+.section__form__body__inner__submit button:hover {
+  background-color: #ff0000;
+  color: white;
+  font-size: 31px;
 }
 .section__form__dialog__header div {
   display: flex;

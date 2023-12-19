@@ -41,11 +41,12 @@
     <script defer src="../JavaScripts/animation_standingOut.js"></script>
     <script defer src="../JavaScripts/animation_bigDiv.js"></script>
     <script defer src="../JavaScripts/animation_text_especial.js"></script>
+    <script defer src="../JavaScripts/animation_formError.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
-        <a class="navbar-brand navbar__logo" href="#"><img src="../Assets/img/logo_jesúsreparador_pagina.png" width=220vh height=50vh></a>
+        <a class="navbar-brand navbar__logo" href="index.html"><img src="../Assets/img/logo_jesúsreparador_pagina.png" width=220vh height=50vh></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <i class="bi bi-list"></i>
         </button>
@@ -100,42 +101,65 @@
 </section>
 
 <section class="section__form">
-    <div class="section__form__body">
+    <form id="form" class="section__form__body">
         <h1 class="text-center">Déjanos un Mensaje</h1>
         <div class="section__form__body__inner">
             <p>Le invitamos a completar nuestro formulario de contacto para ponernos en comunicación con usted.</p>
-            <div class="mb-3 section__form__body__inner__item">
+            <div class="mb-3 section__form__body__inner__item animationFormError">
                 <label for="formName" class="form-label">Nombres y Apellidos:</label>
-                <input type="text" class="form-control" id="formName" aria-describedby="emailHelp">
+                <div>
+                    <input type="text" class="form-control" id="formName" aria-describedby="emailHelp" required title="Por favor, ingrese su nombre completo">
+                    <h4>*</h4>
+                </div>
             </div>
-            <div class="mb-3 section__form__body__inner__item">
+            <div class="mb-3 section__form__body__inner__item animationFormError">
                 <label for="formCellphone" class="form-label">Celular:</label>
-                <input type="tel" class="form-control" id="formCellphone">
+                <div>
+                    <input type="tel" class="form-control" id="formCellphone" required>
+                    <h4>*</h4>
+                </div>
             </div>
-            <div class="mb-3 section__form__body__inner__item">
+            <div class="mb-3 section__form__body__inner__item animationFormError">
                 <label for="formEmail" class="form-label">Correo electrónico:</label>
-                <input type="email" class="form-control" id="formEmail">
+                <div>
+                    <input type="email" class="form-control" id="formEmail" required>
+                    <h4>*</h4>
+                </div>
             </div>
-            <div class="mb-3 section__form__body__inner__item">
+            <div class="mb-3 section__form__body__inner__item animationFormError">
                 <label class="form-label">Grado del estudiante:</label>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected></option>
-                    <option value="Inicial">Inicial</option>
-                    <option value="Primaria">Primaria</option>
-                    <option value="Secundaria">Secundaria</option>
-                </select>
+                <div>
+                    <select class="form-select" aria-label="Default select example" id="formGrade" required>
+                        <option selected></option>
+                        <option value="Inicial">Inicial</option>
+                        <option value="Primaria">Primaria</option>
+                        <option value="Secundaria">Secundaria</option>
+                    </select>
+                    <h4>*</h4>
+                </div>
             </div>
             <div class="mb-3 section__form__body__inner__item">
                 <label for="formConsultation" class="form-label">Consulta:</label>
-                <textarea class="form-control" id="formConsultation" rows="3"></textarea>
+                <div>
+                    <textarea class="form-control" id="formConsultation" rows="3" required></textarea>
+                    <h4>*</h4>
+                </div>
             </div>
             <p>Nota: Si tiene más de un niño para la matrícula, puede comunicarlo a travéz del apartado de Consulta</p>
 
             <div class="section__form__body__inner__submit">
-                <button id="openModalButton" class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" onclick="sendMail()">ENVIAR</button>
+                <button type="submit" id="openModalButton" class="btn btn-primary" data-bs-toggle="modal" onclick="validationForm()">ENVIAR</button>
             </div>
         </div>
-    </div>
+    </form>
+
+    <script>
+        const form = document.querySelector('#form');
+        form.addEventListener('submit', (event)=>{
+            event.preventDefault();
+            form.reset();
+        })
+    </script>
 
 <!--    onclick="sendMail()"-->
 

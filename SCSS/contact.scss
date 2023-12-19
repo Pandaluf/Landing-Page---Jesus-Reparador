@@ -126,14 +126,35 @@
       &__item{
         display: flex;
         justify-content: end;
+        div{
+          display: flex;
 
-        input, select{
-          width: 489px;
-          height: 58px;
-          margin-left: 12px;
+          @media screen and (max-width: 1200px) {
+            width: 100%;
+          }
 
-          @media screen and (max-width: 1200px){
-            width: 90%;
+          input, select{
+            width: 489px;
+            height: 58px;
+            margin-left: 12px;
+
+            @media screen and (max-width: 1200px){
+              width: 100%;
+            }
+          }
+
+          h4{
+            color: red;
+            margin-left: 5px;
+          }
+
+          textarea{
+            width: 489px;
+            margin-left: 12px;
+
+            @media screen and (max-width: 1200px){
+              width: 100%;
+            }
           }
         }
 
@@ -141,15 +162,6 @@
           margin-top: 10px;
           font-size: 24px;
           font-family: "Mplus 1p Bold", serif;
-        }
-
-        textarea{
-          width: 489px;
-          margin-left: 12px;
-
-          @media screen and (max-width: 1200px){
-            width: 90%;
-          }
         }
 
         @media screen and (max-width: 1200px){
@@ -174,6 +186,13 @@
           padding-right: 40px;
           padding-left: 40px;
           border: 0;
+          transition: all 0.1s;
+
+          &:hover{
+            background-color: #ff0000;
+            color: white;
+            font-size: 31px;
+          }
         }
       }
     }
